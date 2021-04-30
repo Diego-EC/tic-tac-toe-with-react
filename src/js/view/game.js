@@ -1,5 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 
 export const Game = () => {
-    return (<Fragment></Fragment>);
-}
+	return <div>Hola</div>;
+};
+
+Game.propTypes = {
+	show: PropTypes.bool
+};

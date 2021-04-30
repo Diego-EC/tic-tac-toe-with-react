@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 
 export const Login = () => {
 	return (
@@ -14,11 +15,19 @@ export const Login = () => {
 						<input type="text" placeholder="Player 2 name"></input>
 					</div>
 					<div>
-						<button className="btn btn-primary">Button</button>
-						<button className="btn btn-primary">Button</button>
+						<button className="btn btn-light btn-xl">
+							<i className="fas fa-times text-warning fa-3x"></i>
+						</button>
+						<button className="btn btn-light btn-xl ml-5">
+							<i className="far fa-circle text-info fa-3x"></i>
+						</button>
 					</div>
 				</div>
 			</div>
 		</Fragment>
 	);
+};
+
+Login.propTypes = {
+	onStartGame: PropTypes.func
 };
