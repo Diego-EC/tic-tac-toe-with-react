@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
-export const Login = () => {
+export const Login = props => {
 	return (
 		<Fragment>
 			<div className="container bg-secondary text-white">
@@ -15,10 +15,14 @@ export const Login = () => {
 						<input type="text" placeholder="Player 2 name"></input>
 					</div>
 					<div>
-						<button className="btn btn-light btn-xl">
+						<button
+							className="btn btn-light btn-xl"
+							onClick={props.onStartGame}>
 							<i className="fas fa-times text-warning fa-3x"></i>
 						</button>
-						<button className="btn btn-light btn-xl ml-5">
+						<button
+							className="btn btn-light btn-xl ml-5"
+							onClick={props.onStartGame}>
 							<i className="far fa-circle text-info fa-3x"></i>
 						</button>
 					</div>
