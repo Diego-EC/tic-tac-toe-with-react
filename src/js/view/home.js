@@ -20,5 +20,10 @@ export function Home() {
 		setGameStatus(<Login onStartGame={startGame} />);
 	}
 
-	return <div className="text-center mt-5">{gameStatus}</div>;
+	return (
+		<div className="container wrapper bg-secondary text-white text-center mt-5">
+			<div className="h4">Tic Tac Toe in React.js</div>
+			<div>{gameStatus}</div>
+		</div>
+	);
 }

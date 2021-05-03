@@ -11,8 +11,12 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.wrapper{
+    height: 40rem;
+}
+
 .btn-xl {
-    padding: 3rem 3rem;
+    padding: 2rem 2rem;
     border-radius: 0.5rem;
 }
 

@@ -99,11 +99,11 @@ export const Match = props => {
 						Start Over
 					</button>
 				</div>
-				<div className="board ">
+				<div className="board">
 					<div className="row">
 						<button
 							className="col-4 cell"
-							onClick={e => updateBoard(0)}>
+							onClick={() => updateBoard(0)}>
 							{gameBoard[0]}
 						</button>
 						<button
