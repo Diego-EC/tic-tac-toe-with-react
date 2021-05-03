@@ -2,6 +2,10 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 
 export const Login = props => {
+	function onStartGame(currentPlayer) {
+		props.onStartGame(currentPlayer);
+	}
+
 	return (
 		<Fragment>
 			<div className="container bg-secondary text-white">
@@ -17,12 +21,12 @@ export const Login = props => {
 					<div>
 						<button
 							className="btn btn-light btn-xl"
-							onClick={props.onStartGame}>
+							onClick={() => onStartGame("x")}>
 							<i className="fas fa-times text-warning fa-3x"></i>
 						</button>
 						<button
 							className="btn btn-light btn-xl ml-5"
-							onClick={props.onStartGame}>
+							onClick={() => onStartGame("o")}>
 							<i className="far fa-circle text-info fa-3x"></i>
 						</button>
 					</div>
